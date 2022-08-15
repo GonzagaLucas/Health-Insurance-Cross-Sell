@@ -27,3 +27,43 @@ Como resultado de sua consultoria, você precisará entregar um relatório conte
 - Quantas ligações a equipe de vendas precisa fazer para contatar 80% dos clientes interessados em adquirir seguro de automóveis?
 
 Os Dados do conjunto estão disponível em um banco de dados Postgresql e cada linha representa um cliente e cada coluna contém alguns atributos que descrevem aquele cliente, além de sua resposta à pesquisa, na qual ela mencionou interesse ou não no novo produto de seguro.
+
+# Dados
+
+O conjunto de dados está disponível na plataforma do Kaggle, através desse link: https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction 
+
+ - **Id**: identificador único do cliente.
+ - **Gender**: gênero do cliente.
+ - **Age**: idade do cliente.
+ - **Driving License**: 0, o cliente não tem permissão para dirigir e 1, o cliente tem para dirigir ( CNH – Carteira Nacional de Habilitação )
+ - **Region Code**: código da região do cliente.
+ - **Previously Insured**: 0, o cliente não tem seguro de automóvel e 1, o cliente já tem seguro de automóvel.
+ - **Vehicle Age**: idade do veículo.
+ - **Vehicle Damage**: 0, cliente nunca teve seu veículo danificado no passado e 1, cliente já teve seu veículo danificado no passado.
+ - **Anual Premium**: quantidade que o cliente pagou à empresa pelo seguro de saúde anual.
+ - **Policy sales channel**: código anônimo para o canal de contato com o cliente.
+ - **Vintage**: número de dias que o cliente se associou à empresa através da compra do seguro de saúde.
+ - **Response**: 0, o cliente não tem interesse e 1, o cliente tem interesse.
+
+# Planejamento da Solução 
+**1. Entendimento do negócio** - Buscar entender quais são os problemas a serem solucionados e como solucioná-los, entender os motivos por trás da necessidade de rankeamento dos clientes, quais aspectos serão considerados na hora da predição e quão melhor a solução proposta pode ser considerando os modelos de predição utilizados atualmente na empresa.
+
+**2. Coleta de Dados** - Coletar os dados na plataforma do Kaggle.
+
+**3. Limpeza dos Dados** - Verificar possíveis dados faltantes e como tratá-los de acordo com a circunstância, analisar existências de outliers e como agir de acordo, verificar outras possíveis inconsistências nos dados.
+
+**4. Exploração dos Dados** - Buscar o melhor entendimento do negócio através da geração de insights, confrontar e validar hipóteses de negócios, verificar possíveis correlações de atributos e como isso ajudará na etapa de ML.
+
+**5. Preparação dos Dados** - Transformar e balancear o que for necessário dos dados para que atenda as premissas da etapa de ML, é necessário deixar os dados bem preparados para que se tenha o melhor resultado possível na etapa de Machine Learning.
+
+**6. Seleção das Features** - Após fazer a preparação e exploração dos dados e entender como cada feature se comporta, iremos selecionar as melhores features para compor o rankeamento através do machine learning.
+
+**7. Aplicação dos Modelos de Machine Learning** - Nesta etapa foram escolhidos os algoritmos de machine learning que seriam usados e então os mesmos foram treinados com os dados já preparados e prontos, cada algoritmo foi testado usando seus devidos parâmetros e posteriormente estratégias de cross validation foram usadas para verificar o real resultado do medelo, bem como tecnicas de hyperparameter fine tunning para encontrar os melhores parâmetros para o modelo escolhido.
+
+**8. Avaliação do Algoritmo** - O algoritmo é avaliado com base em algumas métricas e nesse ponto verifica-se ou não a necessidade de realizar mais um ciclo para melhorar o desempenho final.
+
+**9. Tradução do Erro em Métricas de Negócio** - Com o melhor modelo escolhido, treinado e otimizado a taxa de erro encontrada é trasnformada em mátricas de negócio para que se saiba concretamente quanto de retorno financeiro aquela solução trouxe para a empresa.
+
+**10. Deploy do Modelo em Produção** - O modelo foi colocado em produção no ambiente cloud Heroku para que as predições possam ser acessados através de requisições a uma API.
+
+# Melhores Insights
