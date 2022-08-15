@@ -23,7 +23,7 @@ Como resultado de sua consultoria, você precisará entregar um relatório conte
 
 - Principais insights sobre os atributos mais relevantes dos clientes interessados em adquirir seguro de automóveis.
 - Que porcentagem de clientes interessados em comprar seguro de automóveis a equipe de vendas poderá atingir com 20.000 ligações?
-- E se a capacidade da equipe de vendas aumentar para 40.000 chamadas, que porcentagem de clientes interessados em adquirir seguro de automóveis a equipe de vendas poderá entrar em contato?
+- E se a capacidade da equipe de vendas aumentar para 30.000 chamadas, que porcentagem de clientes interessados em adquirir seguro de automóveis a equipe de vendas poderá entrar em contato?
 - Quantas ligações a equipe de vendas precisa fazer para contatar 80% dos clientes interessados em adquirir seguro de automóveis?
 
 Os Dados do conjunto estão disponível em um banco de dados Postgresql e cada linha representa um cliente e cada coluna contém alguns atributos que descrevem aquele cliente, além de sua resposta à pesquisa, na qual ela mencionou interesse ou não no novo produto de seguro.
@@ -67,3 +67,47 @@ O conjunto de dados está disponível na plataforma do Kaggle, através desse li
 **10. Deploy do Modelo em Produção** - O modelo foi colocado em produção no ambiente cloud Heroku para que as predições possam ser acessados através de requisições a uma API.
 
 # Melhores Insights
+
+- Homens são mais propensos a comprar seguro do carro do que as mulheres.
+- Pessoas acima de 40 anos são mais propensos a comprar o seguro do carro.
+- Clientes há mais de 100 dias do seguro saúde tendem a ter interesse no seguro do carro.
+
+# Perguntas de Negócios Respondidas
+
+**1. Qual a porcentagem de clientes interessados em adquirir um seguro de automóvel o time de vendas conseguirá contatar fazendo 20.000 ligações?**
+
+Ao realizar 20 mil ligações, o que representa cerca de 25% da base de clientes, conseguiremos contactar cerca de 70% de clientes interessados em adquirir o seguro para o automóvel.
+
+<p align="center">
+  <img width="650" height="400" src="https://uploaddeimagens.com.br/images/003/982/284/original/download.png?1660599312"/>
+</p>
+
+Ao observarmos a curva lift, observamos que nosso modelo é 2.6x melhor que fazer o trabalho manual de prospecção e oferta ao cliente ao realizar essas 20 mil ligações.
+
+<p align="center">
+  <img width="650" height="400" src="https://uploaddeimagens.com.br/images/003/982/287/original/download_%281%29.png?1660599589"/>
+</p>
+
+
+**2. E se a capacidade do time de vendas aumentar para 30.000 ligações, qual a porcentagem de clientes interessados em adquirir um seguro de automóvel o time de vendas conseguirá contatar?**
+
+Ao fazer 30 mil ligações, o que representa cerca de 40% da base, conseguiremos atingir 93% de todos os clientes interessados.
+
+
+<p align="center">
+  <img width="650" height="400" src="https://uploaddeimagens.com.br/images/003/982/290/original/download_%282%29.png?1660599794"/>
+</p>
+
+**3. Quantas ligações o time de vendas precisa fazer para contatar 80% dos clientes interessados em adquirir um seguro de automóvel?**
+
+Para contatar 80% dos clientes interessados seriam necessárias aproximadamente 24.000 ligações o que representa 31% da base total analisada.
+
+<p align="center">
+  <img width="650" height="400" src="https://uploaddeimagens.com.br/images/003/982/293/original/download_%283%29.png?1660599954"/>
+</p>
+
+# Conclusão
+
+Podemos perceber após todo o estudo e projeto, que utilizar técnicas de ciência de dados e inteligência artificial pode maximizar os resultados e ganhos de uma empresa, além de diminuir radicalmente a mão de obra empenhada para realizar o trabalho de ligações como foi o caso dessa empresa em específico, após o projeto, poderemos entregar um relatório para o time de vendas com todos os clientes rankeados do mais interessado ao menos interessado, eliminando o tempo gasto com clientes que não possuem interesse e assim reduzindo custos da empresa.
+
+Soluções baseadas em dados é uma importantissima ferramenta e que pode tornar uma empresa bem competitiva, mas negar a importância do valor dos dados pode também fazer o inverso, deixar uma empresa obsoleta.
