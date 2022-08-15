@@ -108,6 +108,6 @@ Para contatar 80% dos clientes interessados seriam necessárias aproximadamente 
 
 # Conclusão
 
-Podemos perceber após todo o estudo e projeto, que utilizar técnicas de ciência de dados e inteligência artificial pode maximizar os resultados e ganhos de uma empresa, além de diminuir radicalmente a mão de obra empenhada para realizar o trabalho de ligações como foi o caso dessa empresa em específico, após o projeto, poderemos entregar um relatório para o time de vendas com todos os clientes rankeados do mais interessado ao menos interessado, eliminando o tempo gasto com clientes que não possuem interesse e assim reduzindo custos da empresa.
+Podemos perceber após todo o projeto, que utilizar técnicas de ciência de dados e inteligência artificial pode maximizar os resultados e ganhos de uma empresa, além de diminuir radicalmente a mão de obra empenhada para realizar o trabalho de ligações como foi o caso dessa empresa em específico, após o projeto, poderemos entregar um relatório para o time de vendas com todos os clientes rankeados do mais interessado ao menos interessado, eliminando o tempo gasto com clientes que não possuem interesse e assim reduzindo custos da empresa.
 
 Soluções baseadas em dados é uma importantissima ferramenta e que pode tornar uma empresa bem competitiva, mas negar a importância do valor dos dados pode também fazer o inverso, deixar uma empresa obsoleta.
